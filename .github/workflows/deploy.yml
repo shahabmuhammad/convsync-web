@@ -40,6 +40,10 @@ jobs:
           # Public proxy URL (Settings → Secrets and variables → Actions → Variables).
           # Never put the Langflow API key here — it would be baked into the JS bundle.
           NEXT_PUBLIC_CHAT_ENDPOINT: ${{ vars.CHAT_ENDPOINT }}
+          # TESTING ONLY: if no proxy is configured, the browser calls Langflow
+          # directly with this key. It ends up in the public JS bundle, so
+          # delete this secret and rotate the key once a proxy is in place.
+          NEXT_PUBLIC_LANGFLOW_API_KEY: ${{ secrets.LANGFLOW_API_KEY }}
 
       - uses: actions/upload-pages-artifact@v3
         with:
