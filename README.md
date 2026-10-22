@@ -48,7 +48,7 @@ npx wrangler deploy                               # prints https://convsync-chat
 
 ### 2. Site → GitHub Pages
 
-1. Push this folder to a GitHub repo (branch `main`).
+1. Push this folder to a GitHub repo (branch `master`).
 2. **Settings → Pages → Source:** GitHub Actions.
 3. **Settings → Secrets and variables → Actions → Variables:** add
    `CHAT_ENDPOINT` = `https://convsync-chat-proxy.<you>.workers.dev/chat`.
