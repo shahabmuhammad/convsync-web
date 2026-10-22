@@ -17,7 +17,7 @@ export function Hero() {
             <span className="h-px w-7 bg-pine" />
             Software engineering for the agent era
           </p>
-          <h1 className="mt-7 font-display text-[56px] font-extrabold leading-[0.95] tracking-[-0.05em] text-ink sm:text-[76px] lg:text-[96px]">
+          <h1 className="mt-7 font-display text-[56px] font-extrabold leading-[0.95] tracking-[-0.04em] text-ink sm:text-[76px] lg:text-[96px]">
             We build the software your agents run on.{" "}
             <span className="text-pine">And the agents too.</span>
           </h1>
